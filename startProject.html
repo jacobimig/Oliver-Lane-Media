@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Oliver Lane Media</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js"></script>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+        <script src="js/script.js"></script>
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+
+        <nav class="navbar navbar-expand-lg">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+        
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav mx-auto">
+                <li class="nav-item active">
+                  <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="films.html" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Films
+                  </a>
+                  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="films.html#demoReel">Demo Reel</a>
+                    <a class="dropdown-item" href="films.html#promotional">Promotional</a>
+                    <a class="dropdown-item" href="films.html#documentary">Documentary</a>
+                    <a class="dropdown-item" href="films.html#wedding">Wedding</a>
+                    <a class="dropdown-item" href="films.html#drone">Drone</a>
+                  </div>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="photographs.html" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Photographs
+                  </a>
+                  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="photographs.html#photographsPortfolio">Portfolio</a>
+                    <a class="dropdown-item" href="photographs.html#photographsWedding">Wedding</a>
+                    <a class="dropdown-item" href="photographs.html#photographsGraduation">Graduation</a>
+                    <a class="dropdown-item" href="photographs.html#photographsPortrait">Portrait</a>
+                  </div>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="pricePackages.html" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Packages
+                  </a>
+                  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="pricePackages.html#promotionalDocumentaryPricing">Promo & Doc</a>
+                    <a class="dropdown-item" href="pricePackages.html#weddingFilmPrices">Wedding Film</a>
+                    <a class="dropdown-item" href="pricePackages.html#dronePricing">Drone</a>
+                    <a class="dropdown-item" href="pricePackages.html#weddingPhotoPrices">Wedding Photo</a>
+                    <a class="dropdown-item" href="pricePackages.html#graduationPrices">Graduation</a>
+                    <a class="dropdown-item" href="pricePackages.html#portraitPrices">Portrait</a>
+                  </div>
+                </li>
+              </ul>
+              <span class="navbar-text project-link">
+                <a class="nav-link project-link" href="startProject.html">Start your project</a>
+              </span>
+            </div>
+          </nav>
+
+        <section id="startProject">
+            <h2>Tell us about your project</h2>
+        </section>
+
+        <section class="contact">
+            <div class="container">
+                <form>
+                    <div class="form-row">
+                        <div class="form-group col-md-6">
+                            <label for="name">Name</label>
+                            <input type="text" class="form-control" id="name" placeholder="Enter name">
+                            <label for="name">Organization</label>
+                            <input type="text" class="form-control" id="name" placeholder="Organization name">
+                        </div> 
+
+                        <div class="form-group col-md-6">
+                            <label for="email">Email address</label>
+                            <input type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Email">
+                            <label for="numer">Telephone number</label>
+                            <input type="text" class="form-control" id="number" placeholder="Telephone number">
+                          </div> 
+                    </div>                         
+
+                    <h2>Services interested in</h2>
+                    <div class="servicesForm">
+                        <div class="videoServicesForm">
+                            <h3>Video</h3>
+                            <div class="form-check">
+                                <input type="checkbox" class="form-check-input" id="promotionalForm">
+                                <label class="form-check-label" for="promotionalForm">Promotional</label>
+                            </div>
+                            <div class="form-check">
+                                <input type="checkbox" class="form-check-input" id="documentaryForm">
+                                <label class="form-check-label" for="documentaryForm">Documentary</label>
+                            </div>
+                            <div class="form-check">
+                                <input type="checkbox" class="form-check-input" id="weddingForm">
+                                <label class="form-check-label" for="weddingForm">Wedding</label>
+                            </div>
+                            <div class="form-check">
+                              <input type="checkbox" class="form-check-input" id="droneForm">
+                              <label class="form-check-label" for="droneForm">Drone</label>
+                            </div>
+                        </div>
+    
+                        <div class="photoServicesForm">
+                            <h3>Photography</h3>
+                            <div class="form-check">
+                            <input type="checkbox" class="form-check-input" id="photoWeddingForm">
+                            <label class="form-check-label" for="photoWeddingForm">Wedding</label>
+                            </div>
+                            <div class="form-check">
+                                <input type="checkbox" class="form-check-input" id="photoGraduationForm">
+                                <label class="form-check-label" for="photoGraduationForm">Graduation</label>
+                            </div>
+                            <div class="form-check">
+                                <input type="checkbox" class="form-check-input" id="photoPortraitForm">
+                                <label class="form-check-label" for="photoPortraitForm">Portrait</label>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="form-group message">
+                        <label for="message">Your project</label>
+                        <input type="text" class="form-control" id="message" placeholder="Tell us about your project">
+                    </div>
+                    <button type="submit" class="btn btn-primary">Send Message</button>
+                </form>
+            </div>
+
+            <div class="OLMinfo">
+                <h2>Oliver Lane Media</h2>
+
+                <a href="https://www.google.com/maps/place/Omaha,+NE/@41.2915193,-96.221357,11z/data=!4m5!3m4!1s0x87938dc8b50cfced:0x46424d4fae37b604!8m2!3d41.2565369!4d-95.9345034"
+                target="_blank">
+                    <p>9876 54th St<br>
+                    Omaha, NE 68508</p>
+                </a>
+
+                <a href="info@oliverlanemedia.com" target="_top" target="_blank">
+                    <p>info@oliverlanemedia.com</p>
+                  </a>
+            
+                  <a href="tel:1-402-471-0987">
+                    <p>402-471-0987</p>
+                  </a>
+            </div>
+        </section>
+
+        <footer>
+            <div class="socialMedia">
+                <a href="www.facebook.com" target="_blank">
+                    <i class="fab fa-facebook-square"></i>
+                </a>
+                <a href="https://www.twitter.com" target="_blank">
+                    <i class="fab fa-twitter-square"></i>
+                </a>
+                <a href="https://www.instagram.com" target="_blank">
+                    <i class="fab fa-instagram-square"></i>
+                </a>
+            </div>
+            <p>&copyCopyright Oliver Lane Media</p>
+        </footer>
+
+        <script>
+            const $dropdown = $(".dropdown");
+            const $dropdownToggle = $(".dropdown-toggle");
+            const $dropdownMenu = $(".dropdown-menu");
+            const showClass = "show";
+
+            $(window).on("load resize", function() {
+            if (this.matchMedia("(min-width: 992px)").matches) {
+                $dropdown.hover(
+                function() {
+                    const $this = $(this);
+                    $this.addClass(showClass);
+                    $this.find($dropdownToggle).attr("aria-expanded", "true");
+                    $this.find($dropdownMenu).addClass(showClass);
+                },
+                function() {
+                    const $this = $(this);
+                    $this.removeClass(showClass);
+                    $this.find($dropdownToggle).attr("aria-expanded", "false");
+                    $this.find($dropdownMenu).removeClass(showClass);
+                }
+                );
+            } else {
+                $dropdown.off("mouseenter mouseleave");
+            }
+            });
+        </script>
+
+    </body>
+</html>

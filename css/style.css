@@ -1,0 +1,925 @@
+/*GLOBAL*/
+html, body {
+  padding: 0;
+  margin: 0;
+  background-color: #1d1e22;
+  color: #f5f5fa;
+}
+
+/*NAVBAR*/
+.navbar {
+  background-color: rgba(0, 0, 0, 0.9) !important;
+}
+
+.nav-link {
+  color: #f5f5fa !important;
+  font-weight: bold;
+  text-transform: uppercase;
+  border-bottom: 1px solid #fdee30;
+  background: rgba(0, 0, 0, 0.9);
+  position: relative;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  -webkit-transition: color 1s;
+  transition: color 1s;
+}
+
+.nav-link:before {
+  content: "";
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #fdee30;
+    -webkit-transform: scaleY(0);
+    transform: scaleY(0);
+    -webkit-transform-origin: 50% 100%;
+    transform-origin: 50% 100%;
+    -webkit-transition-property: transform;
+    transition-property: transform;
+    -webkit-transition: 300ms ease-out;
+    transition: 300ms ease-out;
+}
+
+.project-link {
+  color: #fdee30 !important;
+  background: rgba(0, 0, 0, 0.9) !important;
+  white-space: nowrap;
+}
+
+.navbar-nav>li>.dropdown-menu {
+  background-color: #1d1e22;
+}
+
+.navbar-nav>li>.dropdown-menu a {
+  color: #f5f5fa;
+}
+
+.navbar-toggler {
+  border-color: #fdee30;
+}
+
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgb(  253, 238, 48)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+/*HOME PAGE*/
+/*HEADER_VIDEO*/
+#videoHeader video {
+  max-width: 100%;
+  height: auto;
+}
+
+#videoHeader h1 {
+  display: none;
+}
+/*HOME FILMS SECTION*/
+
+#homeFilms, #homePhotographs, #homeGallery {
+  height: 100vh;
+  background-color: #1d1e22;
+  display: flex;
+}
+
+#homeFilms, #homePhotographs, #homeGallery {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  height: 100vh;
+  width: 100%;
+}
+
+#homeFilms {
+  background-image: url("../images/filmsBkgCopy.jpg");
+}
+
+#homePhotographs {
+  background-image: url("../images/homePhotosBkg.jpg");
+}
+
+#homeGallery {
+  background-image: url("../images/GalleryBkgCopy.jpg");
+}
+
+.subColumn {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 2vw;
+}
+
+.homeHeading {
+  font-size: 5em;
+  text-transform: uppercase;
+  color: #fdee30;
+  text-shadow: 2px 2px #393f4d;
+}
+
+#homeFilms p, #homePhotographs p,
+#homeGallery p {
+  color: #f5f5fa;
+  font-size: 1.5em;
+}
+
+/*GALLERY SECTION*/
+#homeGallery .container {
+  width: 100%;
+  margin: auto;
+}
+
+.homeGalleryGrid {
+  width: 95%;
+  height: 95%;
+  margin: auto;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+
+/*FILMS PAGE*/
+#demoReel {
+  background-image: url("../images/startProjectBkg.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: #f5f5fa;
+  font-size: 2.5em;
+}
+
+#demoReel h3 {
+  font-size: 2em;
+  text-shadow: 2px 2px #1d1e22;
+}
+
+#demoReel .fa-play-circle {
+  cursor: pointer;
+  color: #fdee30;
+}
+
+#demoVideo {
+  display: none;
+}
+
+/*FILM SERVICES SECTION*/
+#promotional, #documentary,
+#wedding, #drone { 
+  width: 90%;
+  margin: auto;
+  margin-top: 2vw;
+}
+
+#promotionalThumbnail, #documentaryThumbnail,
+#weddingThumbnail, #droneThumbnail { 
+  cursor: pointer;
+}
+
+.promoContainer, .documentaryContainer,
+.weddingContainer, .droneContainer  {
+  position: relative;
+  width: 30%;
+  float: left;
+  padding-right: 2vw;
+}
+
+#promotional .fa-play-circle,
+#documentary .fa-play-circle,
+#wedding .fa-play-circle,
+#drone .fa-play-circle {
+  color: #fdee30;
+  font-size: 3em;
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: opacity 0.5s;
+}
+
+#promotional h2, #documentary h2,
+#wedding h2, #drone h2 {
+  color: #fdee30;
+}
+
+#documentary, #drone {
+  background-color: #393f4d;
+}
+
+#promotional a, #documentary a,
+#wedding a, #drone a {
+  color: #fdee30;
+  text-decoration: none;
+}
+
+/*PHOTOGRAPHS PAGE*/
+/*PHOTO GRID*/
+#photographsPortfolio img {
+  width: 100%;
+  height: 33.3vh;
+  cursor: pointer;
+  transition: filter 0.5s;
+}
+
+/*PHOTO WEDDING_GRAD_PORTRAIT SECTIONS*/
+#photographsWedding, #photographsGraduation,
+#photographsPortrait {
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+  max-width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+#photographsWedding {
+  background-image: url("../images/weddingPhotoBkg.jpg");
+}
+
+#photographsGraduation {
+  background-image: url("../images/photosGraduationBkg.jpg");
+}
+
+#photographsPortrait {
+  background-image: url("../images/photosPortraitBkg.jpg");
+}
+
+#photographsWedding h3, #photographsGraduation h3,
+#photographsPortrait h3 {
+  font-size: 6em;
+}
+
+#photographsWedding p, #photographsGraduation p,
+#photographsPortrait p {
+  color: #f5f5fa;
+  font-size: 1.5em;
+  text-shadow: 1px 1px black;
+}
+
+#photographsWedding a, #photographsGraduation a,
+#photographsPortrait a {
+  color: #fdee30;
+  text-shadow: 2px 2px black;
+  font-size: 1.5em;
+  text-decoration: none;
+}
+
+/*PRICE PACKAGES PAGE*/
+.packagesHeader {
+  background-image: url("../images/PackagesBkg.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.packagesHeader h2 {
+  font-size: 4em;
+  text-shadow: 2px 2px black;
+}
+
+/*PRICE SECTIONS*/
+/*PROMO & DOC SECTIONS*/
+#promotionalDocumentaryPricing h2 {
+  text-align: center;
+  font-size: 3em;
+  color: #f5f5fa;
+  text-transform: uppercase;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+}
+
+.PDpricingContainer {
+  width: 70%;
+  margin: auto;
+  margin-bottom: 2em;
+  background-color: rgba(57, 63, 77, 0.5);
+  outline: 1px solid rgba(253, 238, 48, 0.5);
+  outline-offset: -15px;
+  padding: 2vw;  
+}
+
+.PDpricingContainer h3 {
+  color: #f5f5fa;
+  margin-bottom: 0.5em;
+  text-transform: uppercase;
+  font-size: 1.5em;
+  margin-top: 0.5em;
+  margin-left: 5vw;
+}
+
+.PDpricingContainer p {
+  margin: 0;
+  font-size: 1.25em;
+  margin-left: 5vw;
+}
+
+.PDpricingContainer p:last-of-type {
+  margin-bottom: 0.5em;
+}
+
+#promotionalDocumentaryPricing a {
+  text-align: center;
+  padding: 1vw;
+  background-color: #fdee30;
+  color: #1d1e22;
+  font-weight: bold;
+  margin: 1vw 0 5vw 1vw;
+  display: inline-block;
+}
+
+/*PACKAGES SECTIONS*/
+#weddingFilmPrices h2, #weddingPhotoPrices h2,
+#graduationPrices h2, #portraitPrices h2 {
+  text-align: center;
+  font-size: 4em;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+  text-transform: uppercase;
+}
+
+.weddingFilmPricesContainer, .weddingPhotoPricesContainer,
+.graduationPricesContainer, .portraitPricesContainer {
+  width: 90%;
+  margin: auto;
+}
+
+.card {
+  background-color: #1d1e22;
+  border: 2px solid #fdee30;
+  height: 90vh;
+}
+
+.card h6 {
+  font-size: 2em;
+  text-align: center;
+  margin-top: 3vh;
+  height: 5vh;
+}
+
+hr {
+  background-color: #393f4d;
+}
+
+.card-title {
+  font-size: 2em;
+  text-align: center;
+  margin: -3vh 0 1vh 0;
+  height: 4vh;
+}
+
+.card p {
+  text-align: center;
+  margin: 0.5vw 0;
+}
+
+.card-footer a {
+  display: flex;
+  justify-content: center;
+  padding: 1vw;
+  background-color: #fdee30;
+  color: #1d1e22;
+  font-weight: bold;
+}
+
+.card:nth-of-type(3) {
+  background-color: #393f4d;
+}
+
+.card:nth-of-type(3) hr {
+  background-color: black;
+}
+
+.no-gutter .card {
+  margin: 0;
+  column-gap: 0;
+}
+
+/*DRONE SECTION*/
+#dronePricing h2 {
+  text-align: center;
+  font-size: 3em;
+  color: #f5f5fa;
+  margin-top: 1em;
+  margin-bottom: 0.5em;
+  text-transform: uppercase;
+}
+
+.dronePricingContainer {
+  width: 70%;
+  margin: auto;
+  margin-bottom: 2em;
+  background-color: rgba(57, 63, 77, 0.5);
+  outline: 1px solid rgba(253, 238, 48, 0.5);
+  outline-offset: -15px;
+  padding: 2vw;  
+}
+
+.dronePricingContainer h3 {
+  color: #f5f5fa;
+  margin-bottom: 0.5em;
+  text-transform: uppercase;
+  font-size: 1.5em;
+  margin-left: 3vw;
+}
+
+.dronePricingContainer h3:first-child {
+  margin-left: 7vw;
+}
+
+.dronePricingContainer p {
+  margin: 0;
+  font-size: 1.25em;
+  margin-left: 7vw;
+}
+
+.dronePricingContainer p:last-of-type {
+  margin-bottom: 2em;
+}
+
+#dronePricing a {
+  text-align: center;
+  padding: 1vw;
+  background-color: #fdee30;
+  color: #1d1e22;
+  font-weight: bold;
+  margin-left: 7vw;
+  margin-bottom: 1vw;
+  display: inline-block;
+}
+
+/*START PROJECT PAGE*/
+#startProject {
+  background-image: url("../images/startProjectBkg.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-shadow: 1px 1px black;
+}
+
+#startProject h2 {
+  font-size: 4em;
+}
+
+.contact {
+  width: 90%;
+  margin: auto;
+  display: flex;
+  justify-content: space-evenly;
+  background-image: radial-gradient(#393f4d, #1d1e22);
+}
+
+form {
+  width: 100%;
+  margin-top: 10vh;
+  text-transform: uppercase;
+}
+
+label {
+  color: #f5f5fa;
+}
+
+input[type=text], input[type=email] {
+  background-color: #d4d4dc;
+  border: none;
+}
+
+::placeholder {
+  color: #1d1e22 !important;
+}
+
+form h2 {
+  text-align: center;
+  margin: 3vh 0;
+}
+
+.servicesForm {
+  display: flex;
+  justify-content: space-evenly;
+  background-color: #1d1e22;
+}
+
+.servicesForm h3 {
+  border-bottom: 2px solid #fdee30;
+}
+
+.servicesForm label {
+  color: #f5f5fa;
+}
+
+.message {
+    margin-top: 3vw;
+}
+
+.message input[type=text] {
+    padding-bottom: 15vh;
+}
+
+.OLMinfo {
+  margin-top: 4%;    
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.OLMinfo h2 {
+  font-size: 2.5em;
+  border-bottom: 2px solid #1d1e22;
+  margin-bottom: 1em;
+}
+
+.OLMinfo a {
+  color: #f5f5fa;
+  font-size: 1.25em;
+  margin-bottom: 0.5em;
+}
+
+form .btn-primary {
+  color: #1d1e22;
+  background-color: #fdee30;
+  border: none;
+  font-weight: bold;
+}
+
+/*FOOTER*/
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 15vh;
+  width: 100%;
+  background-color: black;
+}
+
+.socialMedia a {
+  font-size: 2em;
+  color: #d4d4dc;
+  text-decoration: none;
+}
+
+/*MEDIA QUERIES*/
+@media only screen and (min-width: 992px) {
+
+  /*NAVBAR*/
+.nav-link:hover {
+  color: rgba(0, 0, 0, 0.9) !important;
+}
+
+  .nav-link:hover:before {
+    -webkit-transform: scaleY(1);
+    transform: scaleY(1);
+}
+
+    .navbar-nav>li>.dropdown-menu a:hover {
+      background-color: #393f4d;
+      color: #f5f5fa;
+    }
+    
+  .project-link {
+    background-color: #393f4d;
+  }
+
+  .navbar .nav-item:not(:last-child) {
+    margin-right: 16%;
+  }
+
+  .dropdown-toggle::after {
+    transition: transform 0.15s linear;
+  }
+
+  .show.dropdown .dropdown-toggle::after {
+    transform: translateY(3px);
+  }
+
+  .dropdown-menu {
+    margin-top: 0;
+  }
+
+  /*PRICE PACKAGES PAGE*/
+.card:hover {
+  transform: scale(1.05);
+  z-index: 2;
+}
+}
+
+@media only screen and (min-width: 768px) {
+
+  /*HOME PAGE*/
+  /*BKG ATTACHMENT*/
+  #homeFilms, #homePhotographs,
+  #homeGallery {
+    background-attachment: fixed;
+  }
+
+/*HOME GALLERY HOVER*/
+  .homeGalleryGrid:hover {
+    filter: saturate(150%);
+    transform: scale(1.05);
+  }
+
+  /*PHOTOGRAPHS PAGE*/
+  /*BKG ATTACHMENT*/
+  #photographsWedding, #photographsGraduation,
+  #photographsPortrait {
+    background-attachment: fixed;
+  }
+
+  /*PHOTO GRID HOVER*/
+  #photographsPortfolio img:hover {
+    filter: saturate(150%);
+  }
+
+  /*START PROJECT FORM*/
+  form .btn-primary:hover {
+    color: #fdee30;
+    background-color: #1d1e22;
+    border: none;
+  }
+
+  /*PRICE PACKAGES HOVER*/
+  #promotionalDocumentaryPricing a:hover,
+  #dronePricing a:hover, .card-footer a:hover {
+    background-color: #1d1e22;
+    color: #fdee30;
+    text-decoration: none;
+  }
+  /*PRICE PACKAGES PAGE*/
+  .weddingFilmPricesContainer {
+    width: 90%;
+    margin: auto;
+  }
+
+  /*FOOTER*/
+  .socialMedia a:hover {
+    color: #fdee30;
+  }
+}
+
+@media only screen and (max-width: 992px) {
+
+/*HOME PAGE*/
+#homeGallery .container {
+  display: none;
+}
+
+/*FILMS PAGE*/
+#promotionalThumbnail, #documentaryThumbnail,
+#weddingThumbnail, #droneThumbnail { 
+  cursor: pointer;
+}
+
+#promotional, #documentary,
+#wedding, #drone { 
+  width: 100%;
+  margin: auto;
+}
+
+.promoContainer, .documentaryContainer,
+.weddingContainer, .droneContainer {
+  position: relative;
+  width: 100%;
+  clear: both;
+  padding: 0;
+  padding-bottom: 2vw;
+}
+
+#promotional h2, #documentary h2,
+#wedding h2, #drone h2 {
+  text-align: center;
+}
+
+#promotional p, #wedding p {
+  margin: 2vw 2vw 5vw 2vw;
+}
+
+#documentary p, #drone p {
+  padding: 2vw 2vw 5vw 2vw;
+  margin: 0;
+}
+
+/*PHOTOGRAPHS PAGE*/
+#photographsWedding h3, #photographsGraduation h3,
+#photographsPortrait h3 {
+  font-size: 9vw;
+}
+
+#photographsWedding p, #photographsGraduation p,
+#photographsPortrait p {
+  font-size: 3vw;
+}
+
+#photographsWedding a, #photographsGraduation a,
+#photographsPortrait a {
+  font-size: 3.5vw;
+}
+
+/*PRICE PACKAGES PAGE*/
+#promotionalDocumentaryPricing h2, #weddingFilmPrices h2,
+#dronePricing h2, #weddingPhotoPrices h2, 
+#graduationPrices h2, #portraitPrices h2 {
+  font-size: 6.5vw;
+}
+
+.PDpricingContainer, .dronePricingContainer {
+  width: 90%;
+  margin: auto; 
+}
+
+.card p {
+  margin: 1vw;
+}
+
+/*BOOK BUTTONS*/
+#promotionalDocumentaryPricing a,
+#dronePricing a, .card-footer a {
+  font-size: 2.5vw;
+}
+  }
+
+  @media screen and (max-width: 993px) and (min-width: 768px) {
+    /*PRICES SECTION_SPACING BETWEEN PACKAGE TILES*/
+    #weddingFilmPrices .three, #weddingFilmPrices .four,
+  #weddingPhotoPrices .three, #weddingPhotoPrices .four, 
+  #portraitPrices .three, #portraitPrices .four {
+    margin-top: 5vw;
+  }
+  
+  #graduationPrices .three h6 {
+    white-space: nowrap;
+    font-size: 1.9em;
+  }
+  }
+
+@media only screen and (max-width: 768px) {
+
+  /* HOME PAGE*/
+  #videoHeader video {
+    display: none;
+  }
+
+  #videoHeader {
+    background-image: url("../images/homeBkg.jpg");
+    background-size: cover;
+    max-width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #videoHeader h1 {
+    display: block;
+    color: #fdee30;
+  font-size: 8vw;
+  text-transform: uppercase;
+  }
+
+  /*FILMS PAGE*/
+  #demoReel h3 {
+    font-size: 9vw;
+  }
+
+  /* PHOTOGRAPHS PAGE*/
+  #photographsPortfolio img {
+    max-width: 100%;
+    height: auto;
+    cursor: pointer;
+  }
+
+  .card {
+    height: auto;
+  }
+
+  .no-gutter .card {
+    margin: 3vw 0;
+  }
+
+  #photographsWedding .subColumn, 
+  #photographsGraduation .subColumn,
+  #photographsPortrait .subColumn {
+    width: 95%;
+    margin: auto;
+    text-align: center;
+  }
+
+  #photographsWedding .subColumn p, 
+  #photographsGraduation .subColumn p,
+  #photographsPortrait .subColumn p {
+    margin: 9vw 0;
+    text-shadow: 2px 2px black;
+  }
+
+  #photographsWedding, #photographsGraduation,
+#photographsPortrait {
+  background-position: right;
+}
+
+/*PRICE PACKAGES PAGE*/
+#promotionalDocumentaryPricing, #dronePricing {
+  text-align: center;  
+}
+
+.packagesHeader h2 {
+  font-size: 7vw;
+}
+
+.card-group {
+  display: block;
+}
+
+.weddingFilmPricesContainer {
+  width: 95%;
+  margin: auto;
+}
+
+/*START PROJECT PAGE*/
+#startProject h2 {
+  font-size: 7vw;
+}
+
+.contact {
+  width: 100%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+form {
+  margin-top: 5vh;
+}
+
+form h2 {
+  margin: 3vh 0;
+}
+
+.OLMinfo {
+  margin-top: 5vh;    
+}
+
+.OLMinfo h2 {
+  margin-bottom: 0.25em;
+}
+
+.OLMinfo a {
+  margin-bottom: 0;
+  text-decoration: none;
+}
+}
+
+@media only screen and (max-width: 600px) {
+  /*PHOTOGRAPHS PAGE*/
+  #photographsWedding p, #photographsGraduation p,
+  #photographsPortrait p {
+    font-size: 5vw;
+  }
+  #photographsWedding {
+    background-image: url("../images/weddingBkgSmall.jpg");
+    background-position: center;
+  }
+  #photographsGraduation {
+    background-image: url("../images/graduationBkgSmall.jpg");
+    background-position: center;
+  }
+  #photographsPortrait {
+    background-image: url("../images/portraitBkgSmall.jpg");
+    background-position: center;
+  }
+
+  /*START PROJECT PAGE*/
+  .contact h2 {
+    font-size: 6vw;
+  }
+  .servicesForm h3 {
+    font-size: 5vw;
+  }
+  .servicesForm label {
+    font-size: 4vw;
+  }
+  .contact button {
+    width: 100%;
+  }
+  .OLMinfo h2 {
+    font-size: 7vw;
+    white-space: nowrap;
+  }
+  .OLMinfo a {
+    font-size: 5vw;
+  }
+}
